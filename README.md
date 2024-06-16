@@ -1,1 +1,3 @@
-# Data-Modeling
+## Review unstructured JSON data and diagram a new structured relational data model
+###	Json to ER diagram
+To convert unstructured JSON data into a structured relational data model, I first analyze the JSON structure to identify key entities and their attributes. For instance, in the provided example, I recognize Receipts and Items as main entities. Then, I define a relational schema by creating corresponding tables for these entities, such as a Receipts table with fields like _id, userId, totalSpent, and purchaseDate, and a ReceiptItems table with fields like receipt_id (foreign key referencing Receipts._id), name, and price. This schema ensures data normalization, normalized to 3NF and maintains relationships between tables.
